@@ -1,0 +1,95 @@
+.ciudad{
+    animation: bg-init;
+    animation-duration: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 40px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+    .city{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 10px;
+        width: 70%;
+        height: 310px;
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        animation: init;
+        animation-duration: 0.5s;
+
+        .link{
+            text-decoration: none;
+            h2{
+                background: -webkit-linear-gradient(#6b576b,  #577e83);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 36px;
+            }
+        }
+
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .info{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .data{
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title{
+                        font-weight: bold;
+                        background: -webkit-linear-gradient(#5f505f,  #334649);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            .image{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                    filter: drop-shadow(15px 5px 5px rgba(34, 34, 34, 0.253));
+                }
+            }
+        }
+    }
+}
+
+@keyframes init{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+}
+
+@keyframes bg-init {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

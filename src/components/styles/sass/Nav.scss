@@ -1,0 +1,47 @@
+.nav{
+    animation: init;
+    animation-duration: 3s;
+    padding: 30px;
+    padding-inline:5%;
+    width: auto;
+    height: 15vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    .link{
+        text-decoration: none;
+        span{
+            background: -webkit-linear-gradient(#6b576b,  #577e83);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .navlogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            padding: 10px;
+            h1{
+                font-size: 32px;
+                font-weight: bold;
+                background: -webkit-linear-gradient(#6b576b,  #577e83);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@keyframes init {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
